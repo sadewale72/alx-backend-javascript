@@ -5,7 +5,8 @@ JavaScriptES6
 
 -   By Johann Kerbrat, Engineering Manager at Uber Works
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/75862d67ca51a042003c.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220617%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220617T231326Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=74ee7d7bb4ab94184148496ecc48a121ddfe8e5502e3be36a047a30ee75f82c0)
+![image](https://user-images.githubusercontent.com/106776383/232731806-5bd941fe-debc-4168-9633-dc030cad52dc.png)
+
 
 Resources
 ---------
