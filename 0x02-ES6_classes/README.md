@@ -5,7 +5,8 @@ OOPJavaScriptES6
 
 -   By Johann Kerbrat, Engineering Manager at Uber Works
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/817248fb77fb5c2cef3f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220619%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220619T232813Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c219ffe33b9a4e14dc1d4d106f0698cdda69327bbde744fea0bd386e293f26d4)
+![image](https://user-images.githubusercontent.com/106776383/233656124-d84c212e-e96a-40c1-ae31-b1c148fe8fb9.png)
+
 
 Resources
 ---------
@@ -74,14 +75,88 @@ Configuration files
 ### `package.json`
 
 Click to show/hide file contents
+```
+{
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
+    "test": "jest",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0"
+  }
+}
+```
 
 ### `babel.config.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+  ],
+};
+```
 
 ### `.eslintrc.js`
 
 Click to show/hide file contents
+```
+module.exports = {
+  env: {
+    browser: false,
+    es6: true,
+    jest: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:jest/all',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: ['jest'],
+  rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
+    'no-console': 'off',
+    'no-shadow': 'off',
+    'no-restricted-syntax': [
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
+  },
+  overrides:[
+    {
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
+```
 
 ### and...
 
@@ -117,9 +192,9 @@ bob@dylan:~$
 
 **Repo:**
 
--   GitHub repository: `alx-backend-javascript`
--   Directory: `0x02-ES6_classes`
--   File: `0-classroom.js`
+-   GitHub repository: [`alx-backend-javascript`](https://github.com/AsuweRich/alx-backend-javascript)
+-   Directory: [`0x02-ES6_classes`](https://github.com/AsuweRich/alx-backend-javascript/tree/main/0x02-ES6_classes)
+-   File: [`0-classroom.js`](0-classroom.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -154,7 +229,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `1-make_classrooms.js`
+-   File: [`1-make_classrooms.js`](1-make_classrooms.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -217,7 +292,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `2-hbtn_course.js`
+-   File: [`2-hbtn_course.js`](2-hbtn_course.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -254,7 +329,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `3-currency.js`
+-   File: [`3-currency.js`](3-currency.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -300,7 +375,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `4-pricing.js`
+-   File: [`4-pricing.js`](4-pricing.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -348,7 +423,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `5-building.js`
+-   File: [`5-building.js`](5-building.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -391,7 +466,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `6-sky_high.js`
+-   File: [`6-sky_high.js`](6-sky_high.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -429,7 +504,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `7-airport.js`
+-   File: [`7-airport.js`](7-airport.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -468,7 +543,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `8-hbtn_class.js`
+-   File: [`8-hbtn_class.js`](8-hbtn_class.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -586,8 +661,8 @@ bob@dylan:~$
 **Repo:**
 
 -   GitHub repository: `alx-backend-javascript`
--   Directory: `0x02-ES6_classes`
--   File: `9-hoisting.js`
+-   Directory: [`0x02-ES6_classes`](https://github.com/AsuweRich/alx-backend-javascript/tree/main/0x02-ES6_classes)
+-   File: [`9-hoisting.js`](9-hoisting.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -640,7 +715,7 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `10-car.js`
+-   File: [`10-car.js`](10-car.js)
 
  Done? Help Check your code Ask for a new correction Get a sandbox QA Review
 
@@ -689,4 +764,4 @@ bob@dylan:~$
 
 -   GitHub repository: `alx-backend-javascript`
 -   Directory: `0x02-ES6_classes`
--   File: `100-evcar.js`
+-   File: [`100-evcar.js`](100-evcar.js)
