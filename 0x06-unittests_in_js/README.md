@@ -6,8 +6,7 @@ UnitTests Back-end JavaScript ES6 NodeJS ExpressJS Mocha
 -   By: Johann Kerbrat, Engineering Manager at Uber Works
 -   Weight: 1
 
-
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/90f79a666e174e6c4ffc.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220811%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220811T142140Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=35cd57fe1ccd8bb0653dc29d92823db90bc0f56a1e505bcabdca51c51a4f2ac3)
+![image](https://github.com/AsuweRich/alx-backend-javascript/assets/106776383/8797c8a9-aa96-47d1-8feb-1dc95fc605d2)
 
 Resources
 ---------
